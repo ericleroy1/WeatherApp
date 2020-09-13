@@ -1,0 +1,52 @@
+html,
+body {
+  height: 100%;
+  background-image: url("images/default.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.form-city {
+  position: relative;
+  top:55%;
+  width: 100%;
+  max-width: 330px;
+  padding: 15px;
+  margin: auto;
+}
+
+.form-control {
+  display: inline-block;
+  width: 80%;
+}
+
+.form-signin .form-control {
+  position: relative;
+  box-sizing: border-box;
+  height: auto;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.form-signin {
+  margin-bottom: 10px;
+}
+
+button {
+
+}
+
+.checkbox {
+  position: relative;
+  top: 55%;
+}
+
+footer {
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  bottom: 0px;
+  margin: auto auto 2rem auto;
+}
