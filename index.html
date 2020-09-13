@@ -15,15 +15,13 @@
 
   <body class="text-center">
 
-
   <section class="mainSection">
-    <div id="cityDiv">Melbourne</div>
-    <div id="tempDiv">15</div>
-    <div id="humidityDiv">65%</div>
-    <div id="conditionDiv">Clear</div>
+    <div id="cityDiv"></div>
+    <div id="tempDiv"></div>
+    <div id="tempRange"></div>
+    <div id="humidityDiv"></div>
+    <div id="conditionDiv"></div>
   </section>
-
-
 
     <div class="inputDiv">
       <form id="mainForm">
@@ -32,15 +30,12 @@
       </form>
     </div>
 
-
     <div class="checkbox mb-3">
-        <input type="checkbox" value="remember-me"> Use Current location
+        <input type="checkbox" value="remember-me" onclick="checkedBox()"> Use Current location
     </div>
 
     <footer class="mt-5 mb-3 text-muted">&copy; MyWeather 2020</footer>
 
-
     <script type="text/javascript" src="app.js"></script>
-
   </body>
 </html>
