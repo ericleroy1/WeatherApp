@@ -72,7 +72,27 @@ function displayResults(weather){
 
 // STEP 5 Gets called inside getData2() - gets the 7-day forecast data
 function forecastResults(response){
-  console.log(response.daily)
+  let timestamps = [];
+  let days = [];
+  let weekdays = [];
+  let maxTemps = [];
+  for (i=1; i<8; i++){
+    timestamps.push(response.daily[i].dt);
+    maxTemps.push(Math.round(response.daily[i].temp.max)+"°c");
+  };
+  // Turns the UNIX timestamps into weekday abbreviations
+  timestamps.forEach(timestamp => days.push(new Date(timestamp*1000)));
+  days.forEach(day => weekdays.push(day.toDateString().substring(0,3)));
+  console.log(weekdays);
+  console.log(maxTemps)
+
+  // let section = document.createElement('h1').innerText("Hello");
+
+  for (i=0; i<7; i++){
+    document.getElementById("day" + i).innerHTML = weekdays[i];
+    document.getElementById("max" + i).innerHTML = maxTemps[i];
+  }
+
 }
 
 // CHECKBOX STEP 2 - gets called by checkbox and geolocates then goes to STEP 3 in main steps
