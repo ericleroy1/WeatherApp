@@ -8,6 +8,12 @@ body {
   background-size: cover;
 }
 
+.mainSection {
+  position: relative;
+  top: 25%;
+  color: beige;
+}
+
 .weatherDiv {
 
 }
@@ -28,6 +34,7 @@ body {
 }
 
 .checkbox {
+  color: beige;
   position: relative;
   top: 55%;
 }
